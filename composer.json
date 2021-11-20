@@ -1,0 +1,29 @@
+{
+  "name": "urn2/nx-queue-amqp",
+  "description": "queue amqp for nx",
+  "homepage": "https://github.com/urn2/nx",
+  "type": "framework",
+  "authors": [
+    {
+      "name": "Vea",
+      "homepage": "http://www.uper.net",
+      "email": "vea@live.cn"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json":"*",
+    "php-amqplib/php-amqplib": "^3.1"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "nx\\parts\\queue\\": [
+        "src/parts/"
+      ],
+      "nx\\helpers\\queue\\": [
+        "src/helpers/"
+      ]
+    }
+  }
+}
